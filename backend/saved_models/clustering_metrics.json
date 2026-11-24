@@ -1,0 +1,97 @@
+{
+  "Optimal_K": 3,
+  "Evaluation": {
+    "inertia": 985.64,
+    "silhouette_score": 0.3608,
+    "davies_bouldin_index": 1.0584
+  },
+  "Elbow_Diagnostics": {
+    "k_values": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "wcss": [
+      1288.38,
+      985.64,
+      741.96,
+      546.85,
+      450.85,
+      387.36,
+      330.34
+    ],
+    "silhouette_scores": [
+      0.4891,
+      0.3608,
+      0.3654,
+      0.4267,
+      0.4231,
+      0.4166,
+      0.4442
+    ],
+    "davies_bouldin_scores": [
+      0.7801,
+      1.0584,
+      1.0082,
+      0.8277,
+      0.8254,
+      0.8693,
+      0.8176
+    ]
+  },
+  "Cluster_Profiles": {
+    "0": {
+      "cluster_id": 0,
+      "cluster_name": "Intermediate Aging / Thermal Active",
+      "description": "Moderate capacity decline, steady impedance growth, active operational heating.",
+      "sample_count": 198,
+      "percentage": 31.1,
+      "means": {
+        "soh": 77.12,
+        "discharge_capacity": 1.5425,
+        "temperature_max": 39.04,
+        "internal_impedance": 0.1442,
+        "cycle_number": 80.0
+      }
+    },
+    "1": {
+      "cluster_id": 1,
+      "cluster_name": "Fresh / High-Capacity Baseline",
+      "description": "Minimal electrochemical wear, low internal resistance, high energy retention.",
+      "sample_count": 216,
+      "percentage": 34.0,
+      "means": {
+        "soh": 90.74,
+        "discharge_capacity": 1.8148,
+        "temperature_max": 38.58,
+        "internal_impedance": 0.1202,
+        "cycle_number": 29.1
+      }
+    },
+    "2": {
+      "cluster_id": 2,
+      "cluster_name": "Degraded / High-Impedance EOL",
+      "description": "Severe active material loss, elevated internal impedance, imminent replacement threshold.",
+      "sample_count": 222,
+      "percentage": 34.9,
+      "means": {
+        "soh": 69.49,
+        "discharge_capacity": 1.3897,
+        "temperature_max": 41.01,
+        "internal_impedance": 0.1565,
+        "cycle_number": 131.7
+      }
+    }
+  },
+  "Clustering_Features": [
+    "soh",
+    "discharge_capacity",
+    "temperature_max",
+    "internal_impedance",
+    "cycle_number"
+  ]
+}

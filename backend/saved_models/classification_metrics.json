@@ -1,0 +1,250 @@
+{
+  "Support_Vector_Machine": {
+    "Accuracy": 0.6136,
+    "Precision_Macro": 0.4571,
+    "Precision_Weighted": 0.481,
+    "Recall_Macro": 0.6267,
+    "Recall_Weighted": 0.6136,
+    "F1_Macro": 0.5257,
+    "F1_Weighted": 0.5377,
+    "Log_Loss": 1.226,
+    "Confusion_Matrix": [
+      [
+        12,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        41,
+        0,
+        0
+      ],
+      [
+        3,
+        16,
+        28,
+        0
+      ],
+      [
+        1,
+        0,
+        27,
+        0
+      ]
+    ],
+    "Per_Class_Metrics": {
+      "Healthy": {
+        "Precision": 0.6,
+        "Recall": 1.0,
+        "F1_Score": 0.75,
+        "Support": 12
+      },
+      "Moderate": {
+        "Precision": 0.7193,
+        "Recall": 0.9111,
+        "F1_Score": 0.8039,
+        "Support": 45
+      },
+      "Degraded": {
+        "Precision": 0.5091,
+        "Recall": 0.5957,
+        "F1_Score": 0.549,
+        "Support": 47
+      },
+      "Critical": {
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": 0.0,
+        "Support": 28
+      }
+    }
+  },
+  "Decision_Tree": {
+    "Accuracy": 0.7197,
+    "Precision_Macro": 0.5516,
+    "Precision_Weighted": 0.5948,
+    "Recall_Macro": 0.7007,
+    "Recall_Weighted": 0.7197,
+    "F1_Macro": 0.609,
+    "F1_Weighted": 0.6417,
+    "Log_Loss": 10.1054,
+    "Confusion_Matrix": [
+      [
+        12,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        39,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        44,
+        0
+      ],
+      [
+        0,
+        0,
+        28,
+        0
+      ]
+    ],
+    "Per_Class_Metrics": {
+      "Healthy": {
+        "Precision": 0.6667,
+        "Recall": 1.0,
+        "F1_Score": 0.8,
+        "Support": 12
+      },
+      "Moderate": {
+        "Precision": 0.9286,
+        "Recall": 0.8667,
+        "F1_Score": 0.8966,
+        "Support": 45
+      },
+      "Degraded": {
+        "Precision": 0.6111,
+        "Recall": 0.9362,
+        "F1_Score": 0.7395,
+        "Support": 47
+      },
+      "Critical": {
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": 0.0,
+        "Support": 28
+      }
+    }
+  },
+  "K_Nearest_Neighbors": {
+    "Accuracy": 0.3864,
+    "Precision_Macro": 0.317,
+    "Precision_Weighted": 0.2558,
+    "Recall_Macro": 0.359,
+    "Recall_Weighted": 0.3864,
+    "F1_Macro": 0.2986,
+    "F1_Weighted": 0.2769,
+    "Log_Loss": 17.4397,
+    "Confusion_Matrix": [
+      [
+        5,
+        7,
+        0,
+        0
+      ],
+      [
+        2,
+        43,
+        0,
+        0
+      ],
+      [
+        0,
+        44,
+        3,
+        0
+      ],
+      [
+        0,
+        9,
+        19,
+        0
+      ]
+    ],
+    "Per_Class_Metrics": {
+      "Healthy": {
+        "Precision": 0.7143,
+        "Recall": 0.4167,
+        "F1_Score": 0.5263,
+        "Support": 12
+      },
+      "Moderate": {
+        "Precision": 0.4175,
+        "Recall": 0.9556,
+        "F1_Score": 0.5811,
+        "Support": 45
+      },
+      "Degraded": {
+        "Precision": 0.1364,
+        "Recall": 0.0638,
+        "F1_Score": 0.087,
+        "Support": 47
+      },
+      "Critical": {
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": 0.0,
+        "Support": 28
+      }
+    }
+  },
+  "Naive_Bayes": {
+    "Accuracy": 0.5758,
+    "Precision_Macro": 0.4315,
+    "Precision_Weighted": 0.4531,
+    "Recall_Macro": 0.5989,
+    "Recall_Weighted": 0.5758,
+    "F1_Macro": 0.4977,
+    "F1_Weighted": 0.5052,
+    "Log_Loss": 9.6157,
+    "Confusion_Matrix": [
+      [
+        12,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        36,
+        0,
+        0
+      ],
+      [
+        0,
+        19,
+        28,
+        0
+      ],
+      [
+        0,
+        0,
+        28,
+        0
+      ]
+    ],
+    "Per_Class_Metrics": {
+      "Healthy": {
+        "Precision": 0.5714,
+        "Recall": 1.0,
+        "F1_Score": 0.7273,
+        "Support": 12
+      },
+      "Moderate": {
+        "Precision": 0.6545,
+        "Recall": 0.8,
+        "F1_Score": 0.72,
+        "Support": 45
+      },
+      "Degraded": {
+        "Precision": 0.5,
+        "Recall": 0.5957,
+        "F1_Score": 0.5437,
+        "Support": 47
+      },
+      "Critical": {
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": 0.0,
+        "Support": 28
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "Graph_Search_Comparison": [
+    {
+      "algorithm": "Breadth-First Search (BFS)",
+      "path": "CRITICAL_FAULT -> ISOLATION -> MODULE_DISASSEMBLY -> CELL_REPLACEMENT -> CALIBRATION_TEST -> CERTIFIED_OPERATIONAL",
+      "steps": 5,
+      "total_cost": 170.0,
+      "nodes_explored": 12,
+      "execution_time_ms": 0.0322,
+      "optimality": "Step-Optimal (Fewest Transitions)"
+    },
+    {
+      "algorithm": "Depth-First Search (DFS)",
+      "path": "CRITICAL_FAULT -> ISOLATION -> THERMAL_STABILIZATION -> DIAGNOSTIC_EIS -> MODULE_DISASSEMBLY -> CELL_REPLACEMENT -> CALIBRATION_TEST -> CERTIFIED_OPERATIONAL",
+      "steps": 7,
+      "total_cost": 205.0,
+      "nodes_explored": 8,
+      "execution_time_ms": 0.0207,
+      "optimality": "Non-Optimal (Deep Traversal)"
+    },
+    {
+      "algorithm": "A* Informed Search",
+      "path": "CRITICAL_FAULT -> ISOLATION -> PRELIMINARY_SCAN -> CELL_REBALANCING -> CALIBRATION_TEST -> CERTIFIED_OPERATIONAL",
+      "steps": 5,
+      "total_cost": 130.0,
+      "nodes_explored": 10,
+      "execution_time_ms": 0.048,
+      "optimality": "Cost-Optimal (Lowest Total Maintenance Cost)"
+    }
+  ],
+  "Local_Search": {
+    "algorithm": "Hill Climbing Local Search",
+    "initial_risk": 1464.0,
+    "optimized_risk": 1008.75,
+    "risk_reduction_pct": 31.1,
+    "iterations": 4,
+    "nodes_explored": 4,
+    "execution_time_ms": 0.1405,
+    "cost_history": [
+      1464.0,
+      1189.5,
+      1033.5,
+      1008.75
+    ],
+    "optimized_schedule": [
+      "B0006_Critical",
+      "B0018_Critical",
+      "B0007_Degraded",
+      "B0005_Moderate",
+      "B0005_Healthy"
+    ]
+  },
+  "Constraint_Satisfaction": {
+    "algorithm": "Backtracking CSP Solver with MRV",
+    "is_satisfied": true,
+    "schedule": [
+      {
+        "task_id": "TASK_B0006",
+        "battery_id": "B0006",
+        "priority": "CRITICAL",
+        "technician": "Alice (Senior Tech)",
+        "time_slot": "SLOT_0900"
+      },
+      {
+        "task_id": "TASK_B0018",
+        "battery_id": "B0018",
+        "priority": "CRITICAL",
+        "technician": "Alice (Senior Tech)",
+        "time_slot": "SLOT_1000"
+      },
+      {
+        "task_id": "TASK_B0007",
+        "battery_id": "B0007",
+        "priority": "MODERATE",
+        "technician": "Alice (Senior Tech)",
+        "time_slot": "SLOT_1100"
+      },
+      {
+        "task_id": "TASK_B0005",
+        "battery_id": "B0005",
+        "priority": "ROUTINE",
+        "technician": "Alice (Senior Tech)",
+        "time_slot": "SLOT_1400"
+      }
+    ],
+    "nodes_explored": 5,
+    "backtracks_count": 0,
+    "execution_time_ms": 0.0519,
+    "constraints_applied": [
+      "No overlapping technician assignments per slot",
+      "Senior technician required for critical battery diagnostics",
+      "Priority sequencing (Critical battery servicing prioritized)",
+      "Slot availability bounds"
+    ]
+  }
+}

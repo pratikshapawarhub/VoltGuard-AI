@@ -1,0 +1,72 @@
+{
+  "SOH_Prediction": {
+    "Manual_Gradient_Descent": {
+      "MAE": 1.7599,
+      "MSE": 3.3991,
+      "RMSE": 1.8437,
+      "R2_Score": 0.9429
+    },
+    "Sklearn_Linear_Regression": {
+      "MAE": 0.3397,
+      "MSE": 0.193,
+      "RMSE": 0.4394,
+      "R2_Score": 0.9968
+    },
+    "Random_Forest_Regressor": {
+      "MAE": 2.2595,
+      "MSE": 7.8269,
+      "RMSE": 2.7977,
+      "R2_Score": 0.8685
+    }
+  },
+  "RUL_Prediction": {
+    "Manual_Gradient_Descent": {
+      "MAE": 18.3685,
+      "MSE": 423.1224,
+      "RMSE": 20.5699,
+      "R2_Score": 0.5872
+    },
+    "Sklearn_Linear_Regression": {
+      "MAE": 27.9536,
+      "MSE": 970.542,
+      "RMSE": 31.1535,
+      "R2_Score": 0.0532
+    },
+    "Random_Forest_Regressor": {
+      "MAE": 19.4711,
+      "MSE": 485.4406,
+      "RMSE": 22.0327,
+      "R2_Score": 0.5264
+    }
+  },
+  "Feature_Importance_SOH": {
+    "discharge_duration": 0.473,
+    "cycle_number": 0.3216,
+    "current_std": 0.092,
+    "current_mean": 0.071,
+    "internal_impedance": 0.0335,
+    "voltage_mean": 0.0031,
+    "temperature_max": 0.0029,
+    "voltage_min": 0.0012,
+    "voltage_std": 0.0006,
+    "voltage_max": 0.0003,
+    "temperature_mean": 0.0003,
+    "temperature_min": 0.0002,
+    "charge_duration": 0.0002
+  },
+  "Feature_Importance_RUL": {
+    "internal_impedance": 0.5793,
+    "current_mean": 0.119,
+    "current_std": 0.1049,
+    "voltage_min": 0.077,
+    "cycle_number": 0.0472,
+    "discharge_duration": 0.0325,
+    "voltage_max": 0.0129,
+    "temperature_mean": 0.0117,
+    "voltage_std": 0.008,
+    "voltage_mean": 0.0039,
+    "temperature_max": 0.0026,
+    "temperature_min": 0.0009,
+    "charge_duration": 0.0003
+  }
+}
